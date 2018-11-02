@@ -1,0 +1,15 @@
+﻿@model ASP_NetMVC.Models.Product
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+<form action="Update" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    Name <input name="name" value="@Model.Name" />
+    Price <input name="price" value="@Model.Price" />
+    <input type="submit" value="Submit" />
+
+</form>
+
+
